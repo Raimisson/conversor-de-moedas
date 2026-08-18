@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Conversor de Moedas</h1>
+
+    <div class="field">
+      <label for="valor">Valor</label>
+      <input type="number" id="valor" value="1" min="0" step="any">
+    </div>
+
+    <div class="selects">
+      <div class="field">
+        <label for="moedaOrigem">De</label>
+        <select id="moedaOrigem">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+      </div>
+
+      <button id="inverter" type="button" title="Inverter moedas">⇄</button>
+
+      <div class="field">
+        <label for="moedaDestino">Para</label>
+        <select id="moedaDestino">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD" selected>Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="resultado">
+      <span id="resultado">0.00</span>
+      <span id="moedaResultado">USD</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
