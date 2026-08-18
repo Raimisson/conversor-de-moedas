@@ -94,3 +94,15 @@ input:focus, select:focus {
   margin-left: 8px;
   color: #6366f1;
 }
+
+.data-cotacao {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.data-cotacao.erro {
+  color: #dc2626;
+  font-weight: 600;
+}
